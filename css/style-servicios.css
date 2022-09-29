@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Para tener el control de las cajas*/
+}
+
+body {
+    width: 100%;
+    height: 100vh; /*va ocupar toda la pantalla*/
+    font-family: sans-serif;
+    }
+
+    #titulo {
+        font-family: 'Roboto', sans-serif;
+        padding-left: 70px;
+        padding-top: 50px;
+        font-size: 30px;
+        color: #136e89;
+    }
+
+    #contenedor{
+        display: flex;
+        max-width: 1500px;
+        display: flex; /*para que sea una caja flexible*/
+        justify-content: center;/*para que todo el contenido que dentro de la eqtiqueta body sea centrado de manera horizontal*/
+        align-items: center; /*para que sea centrado de manera vertical y este el contenido en medio de la pagina*/
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 40px;
+        border-radius: 6px;
+        overflow: hidden; /*para que todo elemento que este fuera del contenedor card (tarjeta) se oculten, no aparezcan afuera */
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /*sombra entre gris claro*/
+        cursor: default;/*cursor normal*/
+        transition: all 400ms ease;
+    }
+
+
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);/*Al pasar el cursor le da un efecto sombreado al contenedor*/
+        transform: translateY(-4%); /*Se traslada a 4% la tarjeta de manera vertical*/
+    }
+
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    .card .contenido{
+        padding: 15px; /*Relleno */
+        text-align: center;
+    }
+
+    .card .contenido p{
+        line-height: 1.5;/*linea de parrafo tenga un pequeño espacio */
+        color: #6a6a6a ;
+    }
+
+    .card .contenido h3{
+        font-weight: 400;/*Reduce la negrita*/
+        margin-bottom: 15px;/*Empuja el parrafo hacia abajo*/
+    }
+
+    .card .contenido a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #136e89;
+        border: 1px solid #136e89;
+        border-radius: 4px;
+        transition: all 400ms ease;
+    }
+
+    .card .contenido a:hover{
+        background: #136e89;
+        color: #fff;
+    }
+
+
+    /* C E L U L A R  */
+    @media (max-width: 767px) {
+        #contenedor {
+            flex-direction: column;
+            padding-left: 0;
+        }
+    }
+
+    /* T A B L E T */
+    @media (min-width: 767px) and (max-width: 1023px){
+        #contenedor {
+            flex-direction: column;
+            max-width: 90%;
+            padding-left: 70px;
+        }
+    }
+/* 
+    @media (min-width: 1024px) {
+        #contenedor {
+            width: 20%;
+        }
+    } */
+
+    
+
+
+
+

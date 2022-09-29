@@ -1,0 +1,80 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 200px 1fr 300px;
+    grid-template-areas: 
+        "enc enc"
+        "ident hor"
+        "ubi ubi";
+}
+
+.header {
+    grid-area: enc;
+}
+
+.header h1{
+    color: brown;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 80px;
+    
+}
+
+#identidad {
+    grid-area: ident;
+    padding-top: 70px;
+}
+
+#identidad p{
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+#horarios{
+    grid-area: hor;
+    padding-top: 30px;
+}
+
+#horarios h2{
+    text-align: center;
+}
+
+#horarios .tabla{
+    padding-left: 120px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+} 
+
+#ubicacion{
+    grid-area:ubi;
+    padding-top: 70px;
+}
+
+#ubicacion .iframe {
+    padding-right: 50px;
+    text-align: center;
+}
+
+#ubicacion h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
