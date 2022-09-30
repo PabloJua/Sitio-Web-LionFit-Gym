@@ -83,12 +83,13 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- data-bs-interval= "10000" -- duracion de la transicion -->
                 <!---Imagen 1--->
-                <img src="images/home/pexels-victor-freitas-2261477.jpg" class="d-block w-100" alt="Slider 01">
+                <img src="images/home/carrusel 4.jpg" class="d-block w-100" alt="Slider 01">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>SHOWCASE YOUR APP</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem nisi possimus ad error!<br>
@@ -103,28 +104,32 @@
             </div>
             <div class="carousel-item">
                 <!---Imagen 2--->
-                <img src="images/home/pexels-victor-freitas-2261485.jpg" class="d-block w-100" alt="Slider 02">
+                <img src="images/home/carrusel 1.jpg" class="d-block w-100" alt="Slider 02">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>SECOND SLIDE LABEL</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem nisi possimus ad error!<br>
                         Praesentium, perspiciatis voluptate autem soluta, veniam reprehenderit!</p>
                 </div>
             </div>
-
             <div class="carousel-item">
                 <!---Imagen 2--->
-                <img src="images/home/pexels-cottonbro-7688862.jpg" class="d-block w-100" alt="Slider 02">
+                <img src="images/home/carrusel 5.jpg" class="d-block w-100" alt="Slider 02">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>SECOND SLIDE LABEL</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem nisi possimus ad error!<br>
+                        Praesentium, perspiciatis voluptate autem soluta, veniam reprehenderit!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!---Imagen 2--->
+                <img src="images/home/carrusel 2.jpg" class="d-block w-100" alt="Slider 02">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>SHOWCASE YOUR APP</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit lorem nisi possimus ad error!<br>
                         Praesentium, perspiciatis voluptate autem soluta, veniam reprehenderit!</p>
                 </div>
             </div>
         </div>
-
-
-
-
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -146,6 +151,29 @@
             <a href="quienes-somos.html">Leer más</a>
         </section>
 
+
+      <!-- Pantallas -->
+      <section class="altura-padding-arriba-abajo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <img class="img-fluid shadow-lg" src="images/pantallas/pantallas1.jpg" alt="Pantalla 01">
+                </div>
+                <div class="col-12 col-sm-3">
+                    <img class="img-fluid shadow-lg" src="images/pantallas/pantallas2.jpg" alt="Pantalla 02">
+                </div>
+
+                <div class="col-12 col-sm-3">
+                    <img class="img-fluid shadow-lg" src="images/pantallas/pantallas4.jpg" alt="Pantalla 03">
+                </div>
+
+                <div class="col-12 col-sm-3">
+                    <img class="img-fluid shadow-lg" src="images/pantallas/pantallas3.jpg" alt="Pantalla 04">
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- Descarga la App LIONFIT-->
         <section class="altura-padding-arriba-abajo">
             <div class="container-fluid">
@@ -154,11 +182,11 @@
                     <div class="col-12 col-sm-6">
                         <img class="img-fluid" src="images/home/app-mockup-2.png" alt="Apps">
                     </div>
-
                     <!---Columna Derecha-->
-                    <div class="col-12 col-sm-6">
-                        <h2 class="titulo-app">Descarga LionFit APP</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quod perferendis quis
+                    <div id="descarga-app" class="col-12 col-sm-6">
+                         <h2>Descarga LionFit APP</h2>
+                         <div id="texto-descarga-app">  
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quod perferendis quis
                             quamiure quo ea, est totam deserunt quibusdam facere nostrum suscipit. Accusamus vitae autem
                             velit veritatis repellat ad adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Similique quod perferendis quis quamiure quo ea, est totam deserunt quibusdam facere
@@ -166,13 +194,15 @@
                             dolor, sit amet consectetur adipisicing elit. Similique quod perferendis quis quamiure quo
                             ea, est totam deserunt quibusdam facere nostrum suscipit. Accusamus vitae autem velit
                             veritatis repellat ad adipisci.</p>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <img class="img-fluid" src="images/home/android.png" alt="Play Store">
-                            </div>
-
-                            <div class="col-12 col-sm-6">
-                                <img class="img-fluid" src="images/home/apple.png" alt="App Store">
+                        </div>
+                        <div id="botones-descarga-app">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <img class="img-fluid" src="images/home/android.png" alt="Play Store">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <img class="img-fluid" src="images/home/apple.png" alt="App Store">
+                                </div>
                             </div>
                         </div>
                     </div>
