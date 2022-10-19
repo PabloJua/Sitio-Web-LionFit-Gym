@@ -1,80 +1,119 @@
-*{
-    /* padding: 0;
-    margin: 0; */
-    box-sizing: border-box;
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #contenedor {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 200px 1fr 300px;
-    grid-template-areas: 
-        "enc enc"
-        "ident hor"
-        "ubi ubi";
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 200px 1fr 300px;
+  grid-template-areas: "enc enc" "ident hor" "ubi ubi";
 }
 
 .header {
-    grid-area: enc;
+  grid-area: enc;
+  background-color: #000000;
 }
-
-.header h1{
-    color: brown;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 80px;
-    
+.header h1 {
+  color: rgb(199, 107, 16);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 80px;
 }
 
 #identidad {
-    grid-area: ident;
-    padding-top: 70px;
+  grid-area: ident;
+  padding-top: 90px;
+}
+#identidad p {
+  padding-left: 100px;
+  padding-right: 150px;
 }
 
-#identidad p{
-    padding-left: 100px;
-    padding-right: 150px;
+#horarios {
+  grid-area: hor;
+  padding-top: 120px;
 }
-
-#horarios{
-    grid-area: hor;
-    padding-top: 30px;
+#horarios h2 {
+  text-align: center;
 }
-
-#horarios h2{
-    text-align: center;
-}
-
-#horarios .tabla{
-    padding-left: 120px;
+#horarios .tabla {
+  padding-left: 100px;
 }
 
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-} 
-
-#ubicacion{
-    grid-area:ubi;
-    padding-top: 70px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
 }
 
+#ubicacion {
+  grid-area: ubi;
+  padding-top: 70px;
+}
 #ubicacion .iframe {
-    padding-right: 50px;
-    text-align: center;
+  padding-right: 0px;
+  text-align: center;
+}
+#ubicacion h2 {
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-#ubicacion h2{
+@media (max-width: 762px) {
+  #contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "enc" "ident" "hor" "ubi";
+  }
+  .header {
+    grid-area: enc;
+    background-color: #ffffff;
+  }
+  .header h1 {
+    color: rgb(230, 136, 41);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  #identidad {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  #identidad p {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
-    text-align: center;
+  }
+  #horarios {
+    padding-top: 0px;
+  }
+  #horarios .tabla {
+    padding-left: 0px;
+    padding: 0 20px;
+  }
+  #horarios table {
+    width: 100% !important;
+  }
+  #ubicacion .iframe {
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+  #ubicacion iframe {
+    width: 100% !important;
+    padding-right: 0;
+  }
 }
 
-
-
-
-
+/*# sourceMappingURL=style-quienes-somos.css.map */

@@ -1,26 +1,54 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Rubik", sans-serif !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
-h1{
-    color: brown;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 0;/*Espacio entre el texto y el contenedor del texto*/
-    font-size: 70px;
+#contact {
+  font-family: "Roboto", sans-serif;
+  color: rgb(215, 107, 40);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 70px !important;
 }
 
-h3 {
-    text-align: center;
-    padding-bottom: 30px;
-}
-section {
-    display: flex;
-    justify-content: center;
+#h2Contact {
+  font-size: 22px !important;
 }
 
-fieldset {
-    width: 60%;
-    height: 80%;
+@media (max-width: 768px) {
+  .nombre {
+    width: 100%;
+  }
+  .apellido {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+  }
+  .fe-nac {
+    width: 100%;
+  }
+  .cod-area {
+    width: 25%;
+    margin-top: 15px !important;
+  }
+  .form-label-ca {
+    font-size: 15px;
+  }
+  .nro-cel {
+    margin-top: 28px !important;
+    width: 75%;
+  }
+  .consulta {
+    width: 100%;
+  }
+  .btn {
+    padding: 10px 80px;
     text-align: center;
+  }
 }
+
+/*# sourceMappingURL=style-contacto.css.map */
