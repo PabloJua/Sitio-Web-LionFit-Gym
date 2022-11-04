@@ -46,7 +46,7 @@ nav.sps--blw .logotipo{
 
 .iconos-redes-header {
     width: 25px;
-    margin: 10px 5px;   
+    margin: 10px 5px;
 }
 
 .titulo-app {
@@ -83,7 +83,7 @@ nav.sps--blw .logotipo{
     margin: auto;/*para que quede centrado, ya que section es una etiqueta de bloque*/
     background-color: #3c8db2;
     color: #fff;
-
+   
     h2 {
         padding-bottom: 20px;
         color: #000;
@@ -97,12 +97,17 @@ nav.sps--blw .logotipo{
     }
 
     a{
-        color: rgb(21, 54, 85);
+        color: #203d5b;
+        border: 2.5px solid  #203d5b !important;
+        font-weight: 501;
         font-size: 20px;
-        font-weight: bold;
+
     }
-}
-    
+
+    a:hover {
+        color: #000;
+    }
+}     
  
 #descarga-app h2{
     padding-top: 20px;
@@ -139,8 +144,6 @@ footer{
         font-size: 12px;  
     }
 }
-
-
 
 @media (max-width: 762px) {
     .navbar{
@@ -181,3 +184,11 @@ footer{
     
     }
 }
+
+@media (min-width: 1023px){
+    .logotipo {
+        width: 100px !important;
+        padding-top: 30px !important;
+    }
+}
+

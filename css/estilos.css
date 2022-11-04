@@ -95,9 +95,13 @@ nav.sps--blw .logotipo {
   padding-bottom: 20px;
 }
 #quienes-somos a {
-  color: rgb(21, 54, 85);
+  color: #203d5b;
+  border: 2.5px solid #203d5b !important;
+  font-weight: 501;
   font-size: 20px;
-  font-weight: bold;
+}
+#quienes-somos a:hover {
+  color: #000;
 }
 
 #descarga-app h2 {
@@ -163,6 +167,12 @@ footer p {
     padding-left: 0;
     padding-right: 60px;
     padding-bottom: 30px;
+  }
+}
+@media (min-width: 1023px) {
+  .logotipo {
+    width: 100px !important;
+    padding-top: 30px !important;
   }
 }
 

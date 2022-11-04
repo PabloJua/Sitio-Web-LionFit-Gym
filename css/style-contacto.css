@@ -5,49 +5,78 @@ body {
   margin-bottom: 50px;
 }
 
-#contact {
+.navbar {
+  font-family: "Poppins", sans-serif;
+}
+
+.sps--abv { /*Cuan el nav se encuentre en posicion normal sea transparente*/
+  background-color: #000;
+  color: #fff;
+}
+
+nav.sps--abv .logotipo {
+  width: 65px;
+  padding-top: 0;
+}
+
+.iconos {
+  padding-left: 40px;
+}
+
+.iconos-redes-header {
+  width: 25px;
+  margin: 10px 5px;
+  color: var(--orange);
+}
+
+#titulo h1 {
   font-family: "Roboto", sans-serif;
-  color: rgb(215, 107, 40);
+  color: rgb(199, 107, 16);
   font-weight: bold;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 100px !important;
   font-size: 70px !important;
+  padding-bottom: 20px;
 }
 
 #h2Contact {
   font-size: 22px !important;
 }
 
+.form-label-ca {
+  font-size: 10px;
+  margin-bottom: 2px;
+  margin-right: 20px;
+}
+
 @media (max-width: 768px) {
-  .nombre {
-    width: 100%;
+  .navbar {
+    height: auto !important;
   }
-  .apellido {
-    width: 100%;
+  #titulo h1 {
+    padding-top: 120px !important;
   }
-  .email {
-    width: 100%;
-  }
-  .fe-nac {
-    width: 100%;
+  #h2Contact {
+    font-size: 15px !important;
   }
   .cod-area {
     width: 25%;
     margin-top: 15px !important;
+    padding-right: 10px !important;
   }
   .form-label-ca {
-    font-size: 15px;
+    font-size: small;
+    margin-bottom: 0px;
   }
   .nro-cel {
+    padding-top: 2px;
     margin-top: 28px !important;
-    width: 75%;
-  }
-  .consulta {
     width: 100%;
   }
   .btn {
     padding: 10px 80px;
     text-align: center;
+    width: 100%;
   }
 }
 
