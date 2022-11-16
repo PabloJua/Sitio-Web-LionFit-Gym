@@ -1,0 +1,177 @@
+:root{
+  --primary-x: #b6b6b6;
+  --light: #ffffff;
+}
+
+body {
+    font-family: "Rubik", sans-serif !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    }
+  
+  .navbar{
+    font-family: 'Poppins', sans-serif;
+    }
+    
+  .sps--abv { /*Cuan el nav se encuentre en posicion normal sea transparente*/
+      background-color: #000;
+      color: #fff;
+  }
+  
+  nav.sps--abv .logotipo{
+      width: 65px;
+      padding-top: 0;
+  }
+  
+  .iconos{
+      padding-left: 40px;
+  }
+  
+  .iconos-redes-header {
+      width: 25px;
+      margin: 10px 5px;
+      color: var(--orange);
+  }  
+
+  #titulo h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(199, 107, 16);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px !important;
+    font-size: 70px !important;
+    padding-bottom: 20px;
+  }
+    
+  .container {
+    margin-bottom: 150px;
+  }
+  
+  #h2Contact {
+    font-size: 18px !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  .form-label-ca {
+    font-size: 10px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+  }  
+  
+
+  .card-body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+  
+  .bg-card-body {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+
+    // background: linear-gradient(150deg, var(--primary-x)10%, var(--light) 100%);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+  footer{
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    padding-bottom: 10px;
+  
+    .logotipo-footer {
+        width: 200px;
+        margin-bottom: 20px;
+      }
+  
+      .iconos-redes-footer {
+          /* width: 20px;
+          margin: 10px 5px;  */
+        width:30px;
+        margin-right: 25px;
+      }
+  
+    p {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 12px;  
+      }
+  }
+    
+  .form-control:hover {
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  }
+
+  @media (max-width:767px) {
+    
+    .navbar {
+      height: auto !important;
+    }
+
+    #titulo h1 {
+      padding-top: 120px !important;
+    }
+
+    #h2Contact {
+      font-size: 15px !important;}
+    
+    .cod-area {
+      width: 25%;
+      margin-top: 23px!important;
+      padding-right: 10px !important;
+    }
+
+    .form-label-ca {
+      font-size: small;
+      margin-bottom: 0px;
+    }
+
+    .nro-cel {
+      padding-top: 2px;
+      margin-top: 28px!important;
+      width: 100%;
+    }
+
+    .div-btn {
+      padding-left: 15px!important;
+    }
+
+    .btn {
+      padding: 10px 80px;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        height: auto!important;
+    }
+    .cod-area {
+      width: 25%;
+      margin-top: 15px!important;
+    }
+
+    .form-label-ca {
+      font-size: 12px !important;
+    }   
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) and (orientation: landscape){
+    .cod-area {
+    margin-top: -7px!important;
+   }
+   .form-label-ca {
+    font-size: 10px !important;
+  } 
+  }
+

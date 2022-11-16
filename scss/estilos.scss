@@ -1,0 +1,258 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#icon {
+    border-radius: 50% !important;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.altura-padding-arriba-abajo{
+    padding: 100px 0;
+}
+
+.logotipo {
+    width: 120px;
+    padding-top: 40px;
+}
+
+.sps--abv { /*Cuan el nav se encuentre en posicion normal sea transparente*/
+    background-color: transparent;
+    color: #000;
+}
+
+.sps--blw { /*Cuan se realice un scroll, el nav cambie de color*/
+    background-color: #000000;
+    color: #fff;
+}
+
+nav.sps--blw .logotipo{
+    width: 65px;
+    padding-top: 0;
+}
+
+.iconos{
+    padding-left: 40px;
+}
+
+.iconos-redes-header {
+    width: 25px;
+    margin: 10px 5px;
+}
+
+.titulo-app {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.carousel-caption { /*Estilo del texto del carrusel*/
+    position: absolute;
+    top: 40%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.btn-light { /*Estilo del borde y el texto de los botones del carrusel*/
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #f8f9fa;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 20px;
+}
+
+#quienes-somos {
+    text-align: center;
+    width: 100%;
+    margin: auto;/*para que quede centrado, ya que section es una etiqueta de bloque*/
+    background-color: #3c8db2;
+    color: #fff;
+   
+    h2 {
+        padding-bottom: 20px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    p{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    a{
+        color: #203d5b;
+        border: 2.5px solid  #203d5b !important;
+        font-weight: 501;
+        font-size: 20px;
+
+    }
+
+    a:hover {
+        color: #000;
+    }
+}     
+ 
+#descarga-app h2{
+    padding-top: 20px;
+}
+
+#texto-descarga-app p{
+    padding-top: 30px;
+}
+
+#botones-descarga-app{
+    padding-top: 50px;
+}
+
+.boton-efecto {
+    transition: all 0.5s;
+}
+
+.boton-efecto:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    padding-bottom: 10px;
+
+    .logotipo-footer {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .iconos-redes-footer {
+        /* width: 20px;
+        margin: 10px 5px;  */
+        width:30px;
+        margin-right: 25px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 12px;  
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar{
+        position: relative !important;
+        padding-top: 0;
+        background-color: #000;
+        height: auto !important;
+    }
+
+    .nav-link{
+        color: gray;
+       }
+
+    .logotipo {
+        width: 100px;
+        padding-top: 0;
+    }
+
+    #pantallas {
+        margin-bottom: 30px;
+        text-align: center;
+    
+        .imagen-pantalla{
+            height: 450px !important;
+            width: 300px !important;
+        }
+    }
+
+    #descarga-app {
+        text-align: center;
+        padding-bottom: 30px;
+        
+        .imagen-app{
+            padding-left: 0;
+            padding-right: 60px;  
+            padding-bottom: 30px;
+        }
+    
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        height: auto!important;
+    }
+
+    .logotipo {
+        width: 60px;
+        padding-top: 0px;
+    }
+
+    .carousel-caption { /*Estilo del texto del carrusel*/
+        position: absolute;
+        top: 100px;
+        bottom: 20px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+    }
+}
+
+/* orientation
+landscape - horizontal
+portrait - vertical
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+    .carousel-caption { /*Estilo del texto del carrusel*/
+        position: absolute;
+        top: 140px;
+        bottom: 20px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+    
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
